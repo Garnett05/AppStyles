@@ -10,7 +10,7 @@ namespace AppStyles
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Master.MasterPage();
         }
 
         protected override void OnStart()

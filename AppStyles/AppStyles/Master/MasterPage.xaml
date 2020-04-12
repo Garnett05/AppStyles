@@ -9,7 +9,7 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Menu" >
             <StackLayout>
-                <Button Text="" Clicked="GoPage" />
+                <Button Text="Implicity Style" Clicked="GoImplicitStylePage" />
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

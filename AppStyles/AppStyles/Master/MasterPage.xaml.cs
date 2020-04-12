@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppStyles.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,9 @@ namespace AppStyles.Master
             InitializeComponent();
         }
 
-        private void GoPage (object sender, EventArgs args)
+        private void GoImplicitStylePage(object sender, EventArgs args)
         {
+            Detail = new NavigationPage(new ImplicitStylePage());
             IsPresented = false;
         }
     }
