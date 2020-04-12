@@ -20,6 +20,20 @@
             <Label Text="Celtics NBA best team - 2" />
             <Label Text="Celtics NBA best team - 3" />
             <Label Text="Celtics NBA best team - 4" />
+            <StackLayout>
+                <StackLayout.Resources>
+                    <ResourceDictionary>
+                        <Style TargetType="Label" >
+                            <Setter Property="TextColor" Value="DarkGreen" />
+                            <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+                        </Style>
+                    </ResourceDictionary>
+                </StackLayout.Resources>
+                <Label Text="Celtics NBA best team - 1" />
+                <Label Text="Celtics NBA best team - 2" />
+                <Label Text="Celtics NBA best team - 3" />
+                <Label Text="Celtics NBA best team - 4" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
