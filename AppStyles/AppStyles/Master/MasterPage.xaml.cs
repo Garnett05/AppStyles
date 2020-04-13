@@ -18,9 +18,14 @@ namespace AppStyles.Master
             InitializeComponent();
         }
 
-        private void GoImplicitStylePage(object sender, EventArgs args)
+        private void GoImplicitStylePage (object sender, EventArgs args)
         {
             Detail = new NavigationPage(new ImplicitStylePage());
+            IsPresented = false;
+        }
+        private void GoEmplicitStylePage (object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new EmplicitStylePage());
             IsPresented = false;
         }
     }

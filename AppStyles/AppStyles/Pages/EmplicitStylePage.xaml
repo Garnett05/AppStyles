@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppStyles.Pages.EmplicitStylePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" >
+                <Setter Property="BackgroundColor" Value="Red" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="lblStyle" TargetType="Label" >
+                <Setter Property="BackgroundColor" Value="Green" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Celtics NBA best team - 1" />
+            <Label Text="Celtics NBA best team - 2" />
+            <Label Text="Celtics NBA best team - 3"  Style="{d:StaticResource lblStyle}"/>
+            <Label Text="Celtics NBA best team - 4" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
