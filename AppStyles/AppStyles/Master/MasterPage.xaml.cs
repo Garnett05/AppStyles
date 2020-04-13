@@ -28,5 +28,10 @@ namespace AppStyles.Master
             Detail = new NavigationPage(new EmplicitStylePage());
             IsPresented = false;
         }
+        private void GoGlobalStylePage (object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new GlobalStylePage());
+            IsPresented = false;
+        }
     }
 }

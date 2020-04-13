@@ -11,6 +11,7 @@
             <StackLayout>
                 <Button Text="Implicity Style" Clicked="GoImplicitStylePage" />
                 <Button Text="Emplicity Style" Clicked="GoEmplicitStylePage" />
+                <Button Text="Global Style" Clicked="GoGlobalStylePage" />
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
