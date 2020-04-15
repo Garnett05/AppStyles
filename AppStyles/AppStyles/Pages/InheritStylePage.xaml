@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppStyles.Pages.InheritStylePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="xStyleView" TargetType="View" >
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="BackgroundColor" Value="Green" />                
+            </Style>
+            <Style x:Key="xStyleLbl" TargetType="Label" BasedOn="{StaticResource Key=xStyleView}" >
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+            <Style x:Key="xStyleBtn" TargetType="Button" BasedOn="{StaticResource Key=xStyleView}">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Celtics most winning franchise in NBA history" Style="{StaticResource xStyleLbl}" />
+            <Label Text="Celtics most winning franchise in NBA history" />
+            <Label Text="Celtics most winning franchise in NBA history" />
+            <Button Text="That's true" Style="{StaticResource xStyleBtn}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

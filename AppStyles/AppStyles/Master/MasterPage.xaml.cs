@@ -33,5 +33,10 @@ namespace AppStyles.Master
             Detail = new NavigationPage(new GlobalStylePage());
             IsPresented = false;
         }
+        private void GoInheritStylePage(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new InheritStylePage());
+            IsPresented = false;
+        }
     }
 }
