@@ -38,5 +38,10 @@ namespace AppStyles.Master
             Detail = new NavigationPage(new InheritStylePage());
             IsPresented = false;
         }
+        private void GoDynamicStylePage (object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new DynamicStylePage());
+            IsPresented = false;
+        }
     }
 }
