@@ -8,16 +8,26 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="lblColor">Green</Color>
+            <Style x:Key="lbl" TargetType="Label" >
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="Black" />
+            </Style>
+            <Style x:Key="newLbl" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                    <Setter Property="BackgroundColor" Value="White" />
+            </Style>            
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!" TextColor="{StaticResource lblColor}"
+            <Label Text="Celtics NBA best team!" TextColor="{StaticResource lblColor}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label Text="Welcome to Xamarin.Forms!" TextColor="{DynamicResource lblColor}"
+            <Label Text="Celtics NBA best team!" TextColor="{DynamicResource lblColor}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label Text="Static label" Style="{StaticResource Key=lbl}" />
+            <Label Text="Dynamic label" Style="{DynamicResource Key=lbl}" />
             <Button Text="Change color" Clicked="ChangeColor" Margin="10" />
         </StackLayout>
     </ContentPage.Content>

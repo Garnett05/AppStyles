@@ -20,6 +20,7 @@ namespace AppStyles.Pages
         private void ChangeColor (object sender, EventArgs args)
         {
             this.Resources["lblColor"] = Color.Black;
+            this.Resources["lbl"] = this.Resources["newLbl"];
         }
     }
 }
